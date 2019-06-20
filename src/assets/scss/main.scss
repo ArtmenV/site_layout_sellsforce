@@ -3,6 +3,10 @@
 @import "utils/mixins";
 @import "utils/fonts";
 @import "utils/reset";
+@import "./small-blocks/location.scss";
+@import "./navigation/sandwich.scss";
+@import "./modules/header.scss";
+@import "./navigation/main-nav.scss";
 
 html {
   line-height: $mainLineHeight;
@@ -21,6 +25,7 @@ html {
 }
 
 body {
+  background: $default-color; 
   margin: 0;
   padding: 0;
   font-family: $mainFont;
@@ -70,7 +75,7 @@ section, .section {
 }
 
 .container {
-  width: 100%;
+  width: 1240px;
   flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
@@ -85,6 +90,8 @@ section, .section {
     max-width: smPhoneWidth;
   }
 }
+
+
 
 // Modules
 // @import "modules/my-module.scss";

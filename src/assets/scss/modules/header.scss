@@ -1,1 +1,11 @@
-// header style
+.header {
+    .container {
+        align-items: center;
+        display: flex;
+    }
+    &-top {
+        &__user-nav {
+            margin-left: auto;
+        }
+    }
+}
