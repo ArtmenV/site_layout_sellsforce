@@ -7,6 +7,7 @@
 @import "./navigation/sandwich.scss";
 @import "./modules/header.scss";
 @import "./navigation/main-nav.scss";
+@import "./modules/user/user.scss";
 
 html {
   line-height: $mainLineHeight;
@@ -25,6 +26,7 @@ html {
 }
 
 body {
+  color: $base-text-color; 
   background: $default-color; 
   margin: 0;
   padding: 0;
@@ -39,7 +41,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
-a { text-decoration: none; }
+a { 
+  text-decoration: none; 
+  color: $base-text-color;
+}
 
 ul, li {
   margin: 0;

@@ -1,6 +1,9 @@
 .location {
+    flex: 0 0 165px;
+    width: 165px;
     &__header {
         align-items: center;
+        cursor: pointer;
         display: flex;
         & > * {
             &:not(:last-child) { margin-right: 10px; }
@@ -9,11 +12,9 @@
     &__current {
         align-items: center;
         display: flex;
-        & > * {
-            &:not(:last-child) { margin-right: 10px; }
-        }
         &:after {
             content: '';
+            margin-left: 10px;
             width: 0;
             height: 0;
             border-style: solid;
