@@ -5,15 +5,22 @@
     }
     &-top {
         padding: 12px 0;
-        &__user-nav {
-            margin-left: auto;
-        }
-        &__location {
-            margin-right: 80px;
-        }
+        &__user-nav { margin-left: auto; }
+        &__location { margin-right: 80px; }
     }
     &-main {
+        color: white;
         background-color: $dark-bg-color ;
         padding: 20px 0;
+        .container {
+            & > * {
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+        }
+        &__basket-prev {
+            margin-left: auto;
+        }
     }
 }

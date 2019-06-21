@@ -1,0 +1,13 @@
+.catalog-nav {
+    &__header {
+        display: flex;
+        white-space: nowrap; 
+        cursor: pointer;
+        align-items: center;
+        & > * {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}

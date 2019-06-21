@@ -1,1 +1,48 @@
-@import "location.scss";
+.logo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+}
+
+.logo__img {
+    width: 160px;
+    height: 50px;
+    white-space: nowrap;
+}
+
+.search {
+    display: flex;
+    & > * {
+        &:not(:last-child) {
+            margin-right: 10px; 
+        }
+        &__icon {
+            @include size(22px);
+            fill: white;
+        }
+        .input-field {
+            flex: 0 0 220px;
+            width: 220px;
+        }
+    }
+}
+.order-callBack {
+    display: flex;
+    flex-direction: column;
+    &__description {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    &__phone {
+        color: $mainActionColor;
+        font-size: 26px;
+        font-family: 'Arial Black';
+        word-spacing: nowrap;
+    }
+    &__link {
+        color: white;
+        font-size: 14px;
+        text-decoration: underline;
+    } 
+}

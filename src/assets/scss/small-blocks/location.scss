@@ -1,6 +1,8 @@
 .location {
-    flex: 0 0 165px;
-    width: 165px;
+    $locationWidth: 175px;
+    flex: 0 0 $locationWidth;
+    width: $locationWidth;
+    max-width: $locationWidth;
     &__header {
         align-items: center;
         cursor: pointer;

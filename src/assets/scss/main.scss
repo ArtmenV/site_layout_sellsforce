@@ -4,10 +4,17 @@
 @import "utils/fonts";
 @import "utils/reset";
 @import "./small-blocks/location.scss";
+@import "./small-blocks/small-blocks.scss";
 @import "./navigation/sandwich.scss";
 @import "./modules/header.scss";
 @import "./navigation/main-nav.scss";
 @import "./modules/user/user.scss";
+@import "./navigation/catalog-nav.scss";
+@import "./modules/form/form.scss";
+@import "./modules/form/input_field.scss";
+@import "./modules/basket/basket-prev.scss";
+@import "./modules/basket/basket.scss";
+@import "../../assets/fonts/fonts.scss";
 
 html {
   line-height: $mainLineHeight;
